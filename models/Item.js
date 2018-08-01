@@ -6,7 +6,7 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
-  quanity: {
+  quantity: {
     type: Number,
     required: true
   },

@@ -4,6 +4,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 
 import items from './routes/api/items';
+import fibonacci from './routes/api/fibonacci';
 
 dotenv.config();
 
@@ -23,5 +24,8 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 // Use Routes
 app.use('/api/items', items);
+
+// Fibonacci
+app.use('/api/fibonacci', fibonacci);
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'));
