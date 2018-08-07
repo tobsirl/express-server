@@ -20,7 +20,7 @@ mongoose
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/hello', (req, res) => res.send('Hello World!'));
 
 // Use Routes
 app.use('/api/items', items);
